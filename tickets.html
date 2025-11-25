@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tickets – Coldplay Christmas Bash</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<div class="snow-layer"></div>
+
+<!-- NAVBAR -->
+<header class="navbar">
+    <div class="logo">
+        <img src="santa.png" class="santa-icon">
+        Coldplay Christmas Bash
+    </div>
+
+    <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="schedule.html">Schedule</a>
+        <a href="tickets.html" class="active">Tickets</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<!-- HERO SECTION -->
+<section class="hero hero-tickets">
+    <div class="hero-content">
+        <h1>Book Your Spot</h1>
+        <p>Choose the experience that fits your Christmas vibe.</p>
+    </div>
+</section>
+
+<!-- TICKET OPTIONS -->
+<section class="section">
+    <h2 class="section-title">Ticket Options</h2>
+
+    <div class="tickets-section">
+
+        <!-- GENERAL -->
+        <div class="ticket-card">
+            <h3>🎟 General Admission – $99</h3>
+            <p>
+                Access to the main floor, LED wristband, and Christmas village.
+            </p>
+            <ul>
+                <li>Standing or stadium seating</li>
+                <li>All opening acts + full Coldplay set</li>
+                <li>Access to food & merch stalls</li>
+            </ul>
+            <button onclick="window.location.href='pay.html?type=general'">
+                Buy General
+            </button>
+        </div>
+
+        <!-- FRONT ROW -->
+        <div class="ticket-card">
+            <h3>✨ Front Row – $199</h3>
+            <p>
+                Get closer to the stage with priority viewing areas.
+            </p>
+            <ul>
+                <li>Reserved front-row section</li>
+                <li>Exclusive lanyard & poster</li>
+                <li>Early entry into the arena</li>
+            </ul>
+            <button onclick="window.location.href='pay.html?type=frontrow'">
+                Buy Front Row
+            </button>
+        </div>
+
+        <!-- VIP -->
+        <div class="ticket-card premium">
+            <h3>🌟 VIP + Meet & Greet – $399</h3>
+            <p>
+                The ultimate Coldplay Christmas experience.
+            </p>
+            <ul>
+                <li>VIP lounge with snacks & hot chocolate</li>
+                <li>Meet & greet with Santa photobooth backdrop</li>
+                <li>Signed Christmas card & merch bundle</li>
+            </ul>
+            <button onclick="window.location.href='pay.html?type=vip'">
+                Buy VIP
+            </button>
+        </div>
+
+    </div>
+</section>
+
+<footer>
+    <p>© 2025 Coldplay Christmas Bash</p>
+</footer>
+
+</body>
+</html>

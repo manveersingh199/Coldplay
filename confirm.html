@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Booking Confirmed</title>
+<link rel="stylesheet" href="styles.css">
+
+<script>
+    function getInfo() {
+        const params = new URLSearchParams(window.location.search);
+        document.getElementById("name").innerText = params.get("name");
+        document.getElementById("email").innerText = params.get("email");
+    }
+</script>
+
+</head>
+<body onload="getInfo();">
+
+<div class="snow-layer"></div>
+
+<header class="navbar">
+    <div class="logo">
+        <img src="santa.png" class="santa-icon"> Coldplay Christmas Bash
+    </div>
+    <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="tickets.html">Back to Tickets</a>
+    </nav>
+</header>
+
+<section class="section">
+    <h2 class="section-title">🎉 Booking Successful!</h2>
+    <div class="payment-box">
+        <p>Thank you, <strong id="name"></strong>!</p>
+        <p>Your ticket confirmation has been sent to:</p>
+        <p><strong id="email"></strong></p>
+
+        <p>You can show this confirmation at the venue gate.</p>
+
+        <a href="index.html" class="btn-primary" style="margin-top:20px; display:inline-block;">Return Home</a>
+    </div>
+</section>
+
+<footer>
+    <p>© 2025 Coldplay Christmas Bash</p>
+</footer>
+
+</body>
+</html>
